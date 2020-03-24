@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Капитонов](https://up.htmlacademy.ru/adaptive/19/user/1248115).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев] (https://htmlacademy.ru/profile/mpodanev) .
 
 ---
 
