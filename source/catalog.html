@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/#" width="100" height="50" alt="Интернет-магазин Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__main-nav main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Каталог товаров</a>
@@ -30,15 +31,17 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__head head-h1">Каталог товаров</h1>
+      <div class="page-main__wrap page-main__fon">
+        <h1 class="page-main__head head-h1">Каталог товаров</h1>
+      </div>
 
-      <section class="catalog">
+      <section class="page-main__catalog catalog">
         <h2 class="visually-hidden">Карточки товара</h2>
         <ul class="catalog__list">
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
               <h3 class="cart__name">Зайчик-попрыгайчик</h3>
-              <img class="cart__image" src="img/#" width="100" height="500" alt="кукла Зайчика-попрыгайчика">
+              <img class="cart__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="кукла Зайчика-попрыгайчика">
             </a>
               <p class="cart__features">Рост 30 см, вес 200 г</p>
               <div class="cart__wrap-price">
@@ -49,7 +52,7 @@
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
               <h3 class="cart__name">Корзинка для белья</h3>
-              <img class="cart__image" src="img/#" width="100" height="500" alt="корзина для белья из вязки">
+              <img class="cart__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзина для белья из вязки">
             </a>
               <p class="cart__features">Диаметр 15 см, высота 10 см</p>
               <div class="cart__wrap-price">
@@ -60,7 +63,7 @@
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
               <h3 class="cart__name">Большая корзинка для игрушек</h3>
-              <img class="cart__image" src="img/#" width="100" height="500" alt="корзина для игрушек из вязки">
+              <img class="cart__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="корзина для игрушек из вязки">
             </a>
               <p class="cart__features">Диаметр 30 см, высота 30 см</p>
               <div class="cart__wrap-price">
@@ -81,25 +84,27 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Твитер</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo" src="img/#" width="108" height="39" alt="Логотип HTMLAcademy">
-            </a>
-          </p>
+      <div class="page-footer__wrap">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Твиттер</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано:
+            <svg class="copyright__link-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
 
