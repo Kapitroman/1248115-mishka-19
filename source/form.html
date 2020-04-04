@@ -33,39 +33,57 @@
     <main class="page-main">
 
       <section class="order">
-        <h1 class="page-main__head head-h1">Вязание на заказ</h1>
+        <div class="page-main__wrap page-main__fon">
+          <h1 class="page-main__head head-h1">Вязание на заказ</h1>
+        </div>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__fieldset">
             <legend class="form__legend">тип</legend>
             <div class="form__group-wrap">
-              <input class="form__input" type="radio" name="type-order" value="interior" id="type-interior" checked>
-              <label class="form__label" for="type-interior">Аксессуар для интерьера</label>
-              <input class="form__input" type="radio" name="type-order" value="toy" id="type-toy">
-              <label class="form__label" for="type-toy">Детская игрушка</label>
+              <div class="wrap-field">
+                <input class="form__input" type="radio" name="type-order" value="interior" id="type-interior" checked>
+                <label class="form__label" for="type-interior">Аксессуар для интерьера</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="radio" name="type-order" value="toy" id="type-toy">
+                <label class="form__label" for="type-toy">Детская игрушка</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
           <legend class="form__legend">цвет</legend>
             <div class="form__group-wrap">
-              <input class="form__input" type="checkbox" name="white" id="color-white" checked>
-              <label class="form__label" for="color-white">Белый</label>
-              <input class="form__input" type="checkbox" name="gray" id="color-gray" checked>
-              <label class="form__label" for="color-gray">Серый</label>
-              <input class="form__input" type="checkbox" name="tiffany" id="color-tiffany">
-              <label class="form__label" for="color-tiffany">"Тиффани"</label>
-              <input class="form__input" type="checkbox" name="black" id="color-black">
-              <label class="form__label" for="color-black">Черный</label>
-              <input class="form__input" type="checkbox" name="pink" id="color-pink">
-              <label class="form__label" for="color-pink">Розовый</label>
-              <input class="form__input" type="checkbox" name="orange" id="color-orange">
-              <label class="form__label" for="color-orange">Оранжевый</label>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="white" id="color-white" checked>
+                <label class="form__label" for="color-white">Белый</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="gray" id="color-gray" checked>
+                <label class="form__label" for="color-gray">Серый</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="tiffany" id="color-tiffany">
+                <label class="form__label" for="color-tiffany">"Тиффани"</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="black" id="color-black">
+                <label class="form__label" for="color-black">Черный</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="pink" id="color-pink">
+                <label class="form__label" for="color-pink">Розовый</label>
+              </div>
+              <div class="wrap-field">
+                <input class="form__input" type="checkbox" name="orange" id="color-orange">
+                <label class="form__label" for="color-orange">Оранжевый</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">фио</legend>
             <div class="form__group-wrap">
-            <label class="form__label form__label--fio" for="id-first-name">Имя:</label>
+              <label class="form__label form__label--fio" for="id-first-name">Имя:</label>
               <input class="form__input form__input--fio" type="text" name="first-name" id="id-first-name" value="" placeholder="Введите ваше имя*" required>
               <label class="form__label form__label--fio" for="id-last-name">Фамилия:</label>
               <input class="form__input form__input--fio" type="text" name="last-name" id="id-last-name" value="" placeholder="Укажите фамилию*" required>
