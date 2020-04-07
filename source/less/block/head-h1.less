@@ -1,14 +1,25 @@
 .head-h1 {
-  min-height: 177px;
-  padding-top: 74px;
+  width: 260px;
+  margin: 0 auto;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  width: 260px;
-  margin: 0 auto;
 }
 
-.head-h1--home {
-  min-height: 282px;
+@media (min-width: 768px) {
+  .head-h1 {
+    width: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
+
+@media (min-width: 1150px) {
+  .head-h1 {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+
