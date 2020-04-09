@@ -1,12 +1,36 @@
+.catalog {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .catalog__list {
-  list-style: none;
-  margin-top: 30px;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .catalog__item {
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+  }
 }

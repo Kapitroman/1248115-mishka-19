@@ -1,9 +1,12 @@
 .about {
-  padding-top: 36px;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 32px;
 }
 
 .about__list {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -12,4 +15,86 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+}
+
+.about__item--eco {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about__item--style {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about__item--like {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about__item--handmade {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about__item--support-produce {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.about__item--wrap {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 55px;
+    width: 668px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 334px;
+    padding-top: 112px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item--eco {
+    order: 0;
+  }
+
+  .about__item--style {
+    order: 2;
+  }
+
+  .about__item--like {
+    order: 4;
+  }
+
+  .about__item--handmade {
+    order: 1;
+  }
+
+  .about__item--support-produce {
+    order: 3;
+  }
+
+  .about__item--wrap {
+    order: 5;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about {
+    width: 1050px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 175px;
+    margin-right: 175px;
+  }
 }

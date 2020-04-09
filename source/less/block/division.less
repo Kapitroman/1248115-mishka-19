@@ -1,6 +1,7 @@
 .division__list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .division__item--interior {
@@ -31,4 +32,33 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .division__list {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .division__item-link {
+    width: 334px;
+  }
+
+  .division__item-name {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .division__list {
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .division__item-link {
+    width: 525px;
+  }
 }
