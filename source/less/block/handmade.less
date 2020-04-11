@@ -7,6 +7,19 @@
 
 .handmade__video {
   margin: 0;
+  width: 260px;
+  height: 150px;
+  background-color: green;
+}
+
+.handmade__head {
+  margin: 0;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .handmade__text {
@@ -19,4 +32,73 @@
   line-height: 24px;
   font-weight: 400;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .handmade {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+
+  .handmade__video {
+    width: 668px;
+    height: 455px;
+    order: 0;
+  }
+
+  .handmade__head {
+    padding-top: 40px;
+    padding-left: 110px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    order: 1;
+  }
+
+  .handmade__text {
+    padding-top: 0;
+    padding-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .handmade__button {
+    width: 584px;
+    order: 3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .handmade {
+    position: relative;
+    width: 1050px;
+    padding-left: 762px;
+    padding-bottom: 60px;
+  }
+
+  .handmade__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .handmade__head {
+    width: 230px;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+
+  .handmade__text {
+    padding-top: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+
+  .handmade__button {
+    width: 230px;
+    margin-left: 0;
+  }
 }

@@ -1,3 +1,7 @@
+.cart {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .cart__link {
   display: block;
   margin-bottom: 30px;
@@ -64,19 +68,19 @@
     height: 334px;
   }
 
+  .cart__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    justify-content: space-between;
+  }
+
   .cart__name {
     font-size: 20px;
   }
 
   .cart__features {
     font-size: 15px;
-  }
-
-  .cart__wrap {
-    display: flex;
-    flex-direction: column;
-    width: 334px;
-    justify-content: space-between;
   }
 
   .cart__price {
@@ -86,7 +90,7 @@
 
 @media (min-width: 1150px) {
   .cart {
-    display: block;
+    flex-direction: column;
     width: 316px;
     margin-right: 51px;
   }
@@ -106,5 +110,11 @@
 
   .cart__wrap {
     width: 316px;
+    min-height: 170px;
+    justify-content: flex-start;
+  }
+
+  .cart__name {
+    min-height: 50px;
   }
 }
