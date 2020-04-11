@@ -1,14 +1,31 @@
 .order {
-  width: 260px;
-  margin: 0 auto;
   padding-bottom: 56px;
 }
 
 .order__text {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 23px;
   padding-bottom: 15px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .order__text {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 75px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .order__text {
+    width: 700px;
+    padding-top: 130px;
+  }
 }
