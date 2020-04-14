@@ -9,12 +9,12 @@
 .featured__wrap-heads {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .featured__head {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 6px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -24,28 +24,33 @@
 
 .featured__description {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 15px;
   line-height: 24px;
 }
 
 .featured__tab {
+  margin-bottom: 29px;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.featured__tab tr {
+  border-bottom: 1px solid #ececec;
 }
 
 .featured__field {
-  width: 38%;
+  width: 41%;
   height: 40px;
 }
 
 .featured__value {
-  width: 61%;
+  width: 59%;
 }
 
 .featured__image {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: 260px;
   height: 315px;
 }
@@ -67,12 +72,13 @@
   .featured__wrap-heads {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .featured__head {
     width: 105px;
-    padding-right: 28px;
+    padding-top: 10px;
+    padding-right: 22px;
     line-height: 17px;
     text-align: center;
   }
@@ -81,20 +87,19 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 334px;
   }
 
   .featured__description {
-    margin-bottom: 15px;
-    padding-right: 44px;
+    width: 290px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .featured__tab {
     width: 290px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .featured__field {
@@ -105,6 +110,7 @@
     padding-right: 44px;
     font-size: 17px;
     line-height: 24px;
+    margin-bottom: 38px;
   }
 
   .featured__image {
@@ -125,7 +131,7 @@
   .featured__wrap-heads {
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .featured__sub-head {
@@ -134,7 +140,8 @@
 
   .featured__head {
     width: 105px;
-    margin-left: 35px;
+    margin-left: 30px;
+    padding-top: 15px;
     padding-right: 0;
     line-height: 17px;
     text-align: center;
@@ -146,11 +153,18 @@
   }
 
   .featured__description {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
   }
 
   .featured__tab {
-    margin-bottom: 95px;
+    margin-bottom: 115px;
+  }
+
+  .featured__price {
+    padding-right: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 36px;
   }
 
   .featured__image {

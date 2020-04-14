@@ -4,7 +4,7 @@
 
 .page-main__head {
   min-height: 177px;
-  padding-top: 74px;
+  padding-top: 72px;
   background-color: #f1f1f1;
 }
 
@@ -20,16 +20,33 @@
 }
 
 .page-main__featured {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-bottom: 35px;
 }
 
 .page-main__about {
   margin-bottom: 60px;
+  position: relative;
+}
+
+.page-main__about::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 0;
+  height: 6px;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 1;
 }
 
 .page-main__catalog {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .page-main__handmade {
@@ -40,39 +57,106 @@
 @media (min-width: 768px) {
   .page-main__head {
     margin-top: -64px;
-    min-height: 217px;
-    padding-top: 102px;
+    min-height: 223px;
+    padding-top: 95px;
   }
 
   .page-main__head--home {
-    margin-bottom: -103px;
-    padding-top: 160px;
-    min-height: 730px;
+    margin-bottom: -120px;
+    padding-top: 154px;
+    min-height: 745px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 5%;
+    background-position: 50% 0;
   }
 
   .page-main__featured {
-    padding-top: 52px;
+    position: relative;
+    padding-top: 36px;
     padding-bottom: 52px;
+  }
+
+  .page-main__featured::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    height: 23px;
+    width: 768px;
+    margin-left: -384px;
+    margin-top: -20px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
   }
 
   .page-main__about {
     margin-bottom: 80px;
   }
+
+  .page-main__about::before {
+    height: 15px;
+    width: 768px;
+    margin-left: -384px;
+    margin-top: 0;
+  }
+
+  .page-main__catalog {
+    position: relative;
+  }
+
+  .page-main__catalog::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    height: 23px;
+    width: 768px;
+    margin-left: -384px;
+    margin-top: -10px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 1150px) {
   .page-main__head {
-    min-height: 239px;
+    min-height: 250px;
+    padding-top: 93px;
   }
 
   .page-main__head--home {
-    min-height: 730px;
+    min-height: 745px;
+    padding-top: 154px;
   }
 
   .page-main__featured {
-    padding-top: 130px;
-    padding-bottom: 52px;
+    padding-top: 112px;
+    padding-bottom: 72px;
+  }
+
+  .page-main__featured::before {
+    height: 34px;
+    width: 1150px;
+    margin-left: -575px;
+    margin-top: -24px;
+  }
+
+  .page-main__about::before {
+    height: 21px;
+    width: 1050px;
+    margin-left: -525px;
+    margin-top: 0;
+  }
+
+  .page-main__catalog::before {
+    height: 34px;
+    width: 1150px;
+    margin-left: -575px;
+    margin-top: -14px;
   }
 }

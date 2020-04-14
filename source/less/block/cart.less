@@ -2,9 +2,17 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.cart:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cart:active {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
 .cart__link {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .cart__image {
@@ -14,11 +22,20 @@
   background-color: maroon;
 }
 
-.name__link {
+.cart__name-link {
   text-decoration: none;
 }
 
+.cart__name-link:hover {
+  opacity: 0.6;
+}
+
+.cart__name-link:active {
+  opacity: 0.3;
+}
+
 .cart__name {
+  margin: 0;
   padding-left: 28px;
   padding-right: 28px;
   font-size: 17px;
@@ -30,9 +47,10 @@
 
 .cart__features {
   margin: 0;
+  padding-top: 3px;
   padding-left: 28px;
   padding-right: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -40,18 +58,38 @@
 }
 
 .cart__wrap-price {
-  display: flex;
-  padding-left: 28px;
-  padding-right: 28px;
+  position: relative;
 }
 
 .cart__price {
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin: 0 28px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  border-top: 1px solid #ececec;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.cart__link-basket svg {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.cart__link-basket path {
+  fill-opacity: 0.2;
+}
+
+.cart__link-basket:hover path {
+  fill: #63d1bb;
+  fill-opacity: 1;
+}
+
+.cart__link-basket:active path {
+  fill: #63d1bb;
+  fill-opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -76,6 +114,7 @@
   }
 
   .cart__name {
+    margin-top: 25px;
     font-size: 20px;
   }
 
@@ -92,6 +131,7 @@
   .cart {
     flex-direction: column;
     width: 316px;
+    min-height: 660px;
     margin-right: 51px;
   }
 
@@ -100,7 +140,7 @@
   }
 
   .cart__link {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .cart__image {
@@ -111,10 +151,10 @@
   .cart__wrap {
     width: 316px;
     min-height: 170px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .cart__name {
-    min-height: 50px;
+    margin-top: 0;
   }
 }
