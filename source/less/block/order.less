@@ -15,11 +15,28 @@
 
 @media (min-width: 768px) {
   .order__text {
+    position: relative;
     width: 668px;
     font-size: 17px;
     line-height: 30px;
     padding-top: 75px;
     padding-bottom: 8px;
+  }
+
+  .order__text::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    height: 23px;
+    width: 768px;
+    margin-left: -384px;
+    margin-top: -10px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
   }
 }
 
@@ -27,5 +44,12 @@
   .order__text {
     width: 700px;
     padding-top: 130px;
+  }
+
+  .order__text::before {
+    height: 34px;
+    width: 1150px;
+    margin-left: -575px;
+    margin-top: -14px;
   }
 }

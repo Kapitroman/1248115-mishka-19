@@ -1,8 +1,11 @@
 .page-footer {
+  display: flex;
   background-color: #f1f1f1;
 }
 
 .page-footer__wrap {
+  display: flex;
+  flex-direction: column;
   width: 260px;
   margin: 0 auto;
 }
@@ -23,7 +26,7 @@
 
 @media (min-width: 768px) {
   .page-footer__wrap {
-    display: flex;
+    flex-direction: row;
     width: 668px;
     min-height: 144px;
     justify-content: space-between;
@@ -33,6 +36,15 @@
   .page-footer__logo {
     display: flex;
     width: 184px;
+  }
+
+  .page-footer__logo-link:hover svg path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo-link:active svg path {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
   }
 }
 

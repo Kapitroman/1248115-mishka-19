@@ -5,10 +5,33 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   width: 144px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social__item {
+  margin-right: 36px;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  width: 24px;
+}
+
+.social__link:hover path {
+  fill: #46c1ae;
+}
+
+.social__link:active path {
+  fill: #46c1ae;
+  fill-opacity: 0.3;
 }
