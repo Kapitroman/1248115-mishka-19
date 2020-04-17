@@ -24,12 +24,17 @@
   padding-bottom: 35px;
 }
 
-.page-main__about {
-  margin-bottom: 60px;
+.page-main__about,
+.page-main__contacts {
   position: relative;
 }
 
-.page-main__about::before {
+.page-main__about {
+  margin-bottom: 55px;
+}
+
+.page-main__about::before,
+.page-main__contacts::before {
   position: absolute;
   content: "";
   left: 50%;
@@ -51,7 +56,15 @@
 
 .page-main__handmade {
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
+}
+
+.page-main__modal {
+  display: none;
+}
+
+.page-main__modal-show {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -75,27 +88,16 @@
     padding-bottom: 52px;
   }
 
-  .page-main__featured::before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 0;
-    height: 23px;
-    width: 768px;
-    margin-left: -384px;
-    margin-top: -20px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    z-index: 1;
-  }
-
   .page-main__about {
-    margin-bottom: 80px;
+    margin-bottom: 77px;
   }
 
-  .page-main__about::before {
+  .page-main__reviews {
+    margin-bottom: 75px;
+  }
+
+  .page-main__about::before,
+  .page-main__contacts::before {
     height: 15px;
     width: 768px;
     margin-left: -384px;
@@ -106,6 +108,7 @@
     position: relative;
   }
 
+  .page-main__featured::before,
   .page-main__catalog::before {
     position: absolute;
     content: "";
@@ -114,12 +117,23 @@
     height: 23px;
     width: 768px;
     margin-left: -384px;
-    margin-top: -10px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 1;
+  }
+
+  .page-main__featured::before {
+    margin-top: -20px;
+  }
+
+  .page-main__catalog::before {
+    margin-top: -10px;
+  }
+
+  .page-main__handmade {
+    margin-bottom: 64px;
   }
 }
 
@@ -139,24 +153,38 @@
     padding-bottom: 72px;
   }
 
-  .page-main__featured::before {
-    height: 34px;
-    width: 1150px;
-    margin-left: -575px;
-    margin-top: -24px;
+  .page-main__about {
+    margin-bottom: 86px;
   }
 
-  .page-main__about::before {
+  .page-main__reviews {
+    margin-bottom: 70px;
+  }
+
+  .page-main__about::before,
+  .page-main__contacts::before {
     height: 21px;
     width: 1050px;
     margin-left: -525px;
     margin-top: 0;
   }
 
+  .page-main__featured::before,
   .page-main__catalog::before {
     height: 34px;
     width: 1150px;
     margin-left: -575px;
+  }
+
+  .page-main__featured::before {
+    margin-top: -24px;
+  }
+
+  .page-main__catalog::before {
     margin-top: -14px;
+  }
+
+  .page-main__handmade {
+    margin-bottom: 106px;
   }
 }
