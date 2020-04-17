@@ -5,6 +5,14 @@
   padding-bottom: 35px;
 }
 
+.handmade:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.handmade:active {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
 .handmade__video {
   margin: 0;
   width: 260px;
@@ -13,6 +21,7 @@
 }
 
 .handmade__head {
+  position: relative;
   margin: 0;
   padding-left: 90px;
   padding-top: 25px;
@@ -22,10 +31,22 @@
   font-weight: 700;
 }
 
+.handmade__head svg {
+  position: absolute;
+  left: 34px;
+  top: 50%;
+  margin-top: -17px;
+}
+
+.handmade__head path {
+  fill: #63d1bb;
+}
+
+
 .handmade__text {
   margin: 0;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 21px;
+  padding-bottom: 25px;
   padding-left: 35px;
   padding-right: 35px;
   font-size: 13px;
@@ -49,16 +70,21 @@
   }
 
   .handmade__head {
-    padding-top: 40px;
-    padding-left: 110px;
-    padding-bottom: 40px;
+    padding-top: 39px;
+    padding-left: 107px;
+    padding-bottom: 32px;
     font-size: 20px;
     order: 1;
   }
 
+  .handmade__head svg {
+    left: 38px;
+  }
+
   .handmade__text {
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
+    padding-left: 38px;
     font-size: 15px;
     line-height: 30px;
     order: 2;
@@ -67,6 +93,7 @@
   .handmade__button {
     width: 584px;
     order: 3;
+    margin-left: 38px;
   }
 }
 
@@ -82,18 +109,25 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 682px;
+    height: 455px;
   }
 
   .handmade__head {
     width: 230px;
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-bottom: 35px;
+  }
+
+  .handmade__head svg {
+    left: 0;
+    margin-top: -45px;
   }
 
   .handmade__text {
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     padding-left: 0;
   }
 
