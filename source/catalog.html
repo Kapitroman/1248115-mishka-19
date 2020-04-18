@@ -13,7 +13,11 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrap-menu">
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-image logo" src="img/#" width="86" height="35" alt="Интернет-магазин Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-image logo" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+            </picture>
           </a>
           <ul class="main-nav__menu-list main-nav__menu-list--total">
             <li class="main-nav__item">
@@ -66,7 +70,11 @@
         <ul class="catalog__list">
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
-              <img class="cart__image" src="#" width="260" height="195" alt="кукла Зайчика-попрыгайчика">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="cart__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="кукла Зайчика-попрыгайчика">
+              </picture>
             </a>
             <div class="cart__wrap">
               <div class="cart__description">
@@ -86,7 +94,11 @@
           </li>
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
-              <img class="cart__image" src="#" width="260" height="195" alt="корзина для белья из вязки">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="cart__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="корзина для белья из вязки">
+              </picture>
             </a>
             <div class="cart__wrap">
               <div class="cart__description">
@@ -106,7 +118,11 @@
           </li>
           <li class="catalog__item cart">
             <a class="cart__link" href="#">
-              <img class="cart__image" src="#" width="260" height="195" alt="корзина для игрушек из вязки">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="cart__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="корзина для игрушек из вязки">
+              </picture>
             </a>
             <div class="cart__wrap">
               <div class="cart__description">
@@ -226,5 +242,9 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </body>
 </html>
