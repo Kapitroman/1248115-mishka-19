@@ -76,9 +76,20 @@
   right: 28px;
   top: 50%;
   margin-top: -15px;
+  fill-opacity: 0.2;
 }
 
-.cart__link-basket path {
+.cart__link-basket:hover svg {
+  fill: #63d1bb;
+  fill-opacity: 1;
+}
+
+.cart__link-basket:active svg {
+  fill: #63d1bb;
+  fill-opacity: 0.3;
+}
+
+/*.cart__link-basket path {
   fill-opacity: 0.2;
 }
 
@@ -90,7 +101,7 @@
 .cart__link-basket:active path {
   fill: #63d1bb;
   fill-opacity: 0.3;
-}
+}*/
 
 @media (min-width: 768px) {
   .cart {
