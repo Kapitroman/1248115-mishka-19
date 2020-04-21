@@ -5,7 +5,13 @@
 }
 
 .copyright__link {
-  display: block;
+  /*display: inline-block;
+  vertical-align: middle;*/
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: space-between;
   width: 182px;
   font-size: 19px;
   line-height: 18px;
@@ -21,13 +27,23 @@
 .copyright__link-logo {
   margin-left: 22px;
   vertical-align: middle;
+  fill: #63d1bb;
 }
 
-.copyright__link-logo path {
+/*.copyright__link-logo {
+  fill: #63d1bb;
+}*/
+
+.copyright__link-logo:hover,
+.copyright__link-logo:active {
+  fill: #46c1ae;
+}
+
+/*.copyright__link-logo path {
   fill: #63d1bb;
 }
 
 .copyright__link-logo:hover path,
 .copyright__link-logo:active path {
   fill: #46c1ae;
-}
+}*/

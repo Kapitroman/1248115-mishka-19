@@ -54,6 +54,14 @@
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav__logo[href]:hover .logo {
+  opacity: 0.6;
+}
+
+.main-nav__logo[href]:active .logo {
+  opacity: 0.3;
+}
+
 .main-nav__logo-image {
   margin: auto;
 }
@@ -98,24 +106,38 @@
   width: 19px;
   height: 18px;
   margin-top: -9px;
-}
-
-.main-nav__link--search path,
-.main-nav__link--basket path {
   fill-opacity: 0.2;
+  fill: #000000;
 }
 
-.main-nav__link--search:hover path,
-.main-nav__link--basket:hover path {
+.main-nav__link--search:hover svg,
+.main-nav__link--basket:hover svg {
   fill: #63d1bb;
   fill-opacity: 1;
 }
 
-.main-nav__link--search:active path,
-.main-nav__link--basket:active path {
+.main-nav__link--search:active svg,
+.main-nav__link--basket:active svg {
   fill: #63d1bb;
   fill-opacity: 0.3;
 }
+
+/*.main-nav__link--search path,
+.main-nav__link--basket path {
+  fill-opacity: 0.2;
+}*/
+
+/*.main-nav__link--search:hover path,
+.main-nav__link--basket:hover path {
+  fill: #63d1bb;
+  fill-opacity: 1;
+}*/
+
+/*.main-nav__link--search:active path,
+.main-nav__link--basket:active path {
+  fill: #63d1bb;
+  fill-opacity: 0.3;
+}*/
 
 .main-nav__menu-list--addition {
   display: none;
