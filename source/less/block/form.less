@@ -12,9 +12,9 @@
   padding-bottom: 30px;
 }
 
-.form__fieldset--tel,
-.form__fieldset--mail {
-  padding-top: 10px;
+.form__fieldset--contacts {
+  border: none;
+  padding-top: 0;
   padding-bottom: 31px;
 }
 
@@ -179,34 +179,59 @@ input[type="checkbox"]:active + .form__label::before {
   margin-bottom: 0;
 }
 
-.form__fieldset--tel .form__group-wrap,
-.form__fieldset--mail .form__group-wrap {
+.form__group-wrap--contacts {
   position: relative;
+  padding-top: 0;
 }
 
-.form__fieldset--tel .form__label,
-.form__fieldset--mail .form__label {
+.form__group-wrap--contacts + .form__group-wrap--contacts {
+  margin-top: 28px;
+}
+
+.form__group-wrap--contacts::before {
   position: absolute;
-  right: 0;
   top: 10px;
-  z-index: 2;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+  z-index: -1;
 }
 
-.form__fieldset--tel path,
-.form__fieldset--mail path {
+.form__legend--contacts {
+  display: inline-block;
+  width: auto;
+  z-index: 1;
+  background-color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.form__fieldset--contacts svg {
+  position: absolute;
   fill-opacity: 0.2;
 }
 
-.form__fieldset--tel:hover path,
-.form__fieldset--mail:hover path,
-.form__fieldset--tel:active path,
-.form__fieldset--mail:active path {
+.form__icon-tel {
+  right: 3px;
+  top: 35px;
+}
+
+.form__icon-mail {
+  right: 3px;
+  top: 35px;
+}
+
+.form__legend--contacts:hover .form__icon-tel,
+.form__legend--contacts:hover .form__icon-mail,
+.form__legend--contacts:active .form__icon-tel,
+.form__legend--contacts:active .form__icon-mail {
   fill-opacity: 1;
   fill: #62d1ba;
 }
 
 .form__textarea {
   width: 100%;
+  margin-top: 15px;
   min-height: 141px;
   padding-top: 15px;
   padding-left: 12px;
@@ -230,7 +255,7 @@ input[type="checkbox"]:active + .form__label::before {
 }
 
 .form__footer {
-  margin-top: -15px;
+  margin-top: 13px;
 }
 
 .form__text {
@@ -265,22 +290,10 @@ input[type="checkbox"]:active + .form__label::before {
     padding-bottom: 25px;
   }
 
-  .form__fieldset--tel {
-    padding-bottom: 25px;
-  }
-
-  .form__fieldset--mail {
-    padding-top: 0;
-  }
-
   .form__legend {
     position: absolute;
     top: 65px;
     left: 0;
-  }
-
-  .form__fieldset--mail .form__legend {
-    top: 15px;
   }
 
   .form__group-wrap {
@@ -405,15 +418,51 @@ input[type="checkbox"]:active + .form__label::before {
     border: 2px solid #000000;
   }
 
+  .form__fieldset.form__fieldset--contacts {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  .form__group-wrap--contacts {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__group-wrap--contacts::before {
+    display: none;
+  }
+
+  .form__group-wrap--contacts + .form__group-wrap--contacts {
+    margin-top: 24px;
+  }
+
+  .form__legend--contacts {
+    top: 16px;
+    background-color: transparent;
+  }
+
   .form__input--tel,
   .form__input--email {
     background-color: #f1f1f1;
   }
 
-  .form__fieldset--tel .form__label,
-  .form__fieldset--mail .form__label {
-    position: absolute;
-    right: 25px;
+  .form__icon-tel {
+    right: -585px;
+    top: -5px;
+  }
+
+  .form__icon-mail {
+    right: -570px;
+    top: -5px;
+  }
+
+  .form__group-wrap--message {
+    margin-top: 35px;
+  }
+
+  .form__group-wrap--message .form__legend--contacts {
+    top: 30px;
   }
 
   .form__textarea {
@@ -432,7 +481,7 @@ input[type="checkbox"]:active + .form__label::before {
     width: 668px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 52px;
   }
 
   .form__text {
@@ -473,16 +522,24 @@ input[type="checkbox"]:active + .form__label::before {
     margin-left: 0;
   }
 
+  .form__group-wrap--contacts {
+    width: 1050px;
+  }
+
   .form__group-wrap--fio .wrap-field,
   .form__input--tel,
   .form__input--email {
     width: 700px;
   }
 
-  .form__fieldset--tel .form__label,
-  .form__fieldset--mail .form__label {
-    position: absolute;
-    right: 175px;
+  .form__icon-tel {
+    right: -745px;
+    top: -5px;
+  }
+
+  .form__icon-mail {
+    right: -730px;
+    top: -5px;
   }
 
   .form__textarea {
@@ -491,6 +548,6 @@ input[type="checkbox"]:active + .form__label::before {
 
   .form__footer {
     width: 700px;
-    margin-top: -5px;
+    margin-top: 49px;
   }
 }
