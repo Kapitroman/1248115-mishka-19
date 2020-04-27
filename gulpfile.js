@@ -72,7 +72,7 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("minify", () => {
+gulp.task("minify", function () {
   return gulp.src("build/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
@@ -101,16 +101,12 @@ gulp.task("refresh", function (done) {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("sprite", "html", "minify", "refresh"));
 });
 
 gulp.task("build", gulp.series(

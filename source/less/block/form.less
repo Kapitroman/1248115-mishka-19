@@ -76,6 +76,11 @@ input[type="checkbox"] + .form__label {
   padding-top: 10px;
 }
 
+input[type="radio"]:focus + .form__label,
+input[type="checkbox"]:focus + .form__label {
+  outline: 1px solid #5e9ed6;
+}
+
 input[type="radio"]:checked + .form__label::before {
   content: "";
   position: absolute;
@@ -125,6 +130,11 @@ input[type="radio"]:active + .form__label::before {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
+input[type="radio"]:disabled + .form__label::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
 input[type="checkbox"]:checked + .form__label::before {
   content: "";
   position: absolute;
@@ -172,6 +182,11 @@ input[type="checkbox"]:hover + .form__label::before {
 
 input[type="checkbox"]:active + .form__label::before {
   border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+input[type="checkbox"]:disabled + .form__label::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+  background-color: rgba(68, 68, 68, 0.3);
 }
 
 .form__label--fio {
