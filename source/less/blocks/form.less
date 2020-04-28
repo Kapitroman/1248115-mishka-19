@@ -28,15 +28,15 @@
   font-weight: 700;
 }
 
-.wrap-field {
+.form__wrap-field {
   margin-bottom: 21px;
 }
 
-.wrap-field--radio {
+.form__wrap-field--radio {
   margin-bottom: 12px;
 }
 
-.wrap-field:last-child {
+.form__wrap-field:last-child {
   margin-bottom: 0;
 }
 
@@ -55,6 +55,7 @@
 }
 
 .form ::placeholder {
+  font-family: "Open Sans", "Verdana", sans-serif;
   font-size: 17px;
   line-height: 48px;
   font-weight: 400;
@@ -315,24 +316,24 @@ input[type="checkbox"]:disabled + .form__label::before {
     padding-left: 167px;
   }
 
-  .wrap-field {
+  .form__wrap-field {
     margin-bottom: 24px;
   }
 
-  .wrap-field--radio {
+  .form__wrap-field--radio {
     margin-bottom: 24px;
   }
 
-  .form__group-wrap--inline .wrap-field {
+  .form__group-wrap--inline .form__wrap-field {
     display: inline-block;
     width: 238px;
   }
 
-  .form__group-wrap--inline .wrap-field:nth-child(2n) {
+  .form__group-wrap--inline .form__wrap-field:nth-child(2n) {
     margin-left: 20px;
   }
 
-  .form__group-wrap--fio .wrap-field {
+  .form__group-wrap--fio .form__wrap-field {
     display: flex;
   }
 
@@ -528,12 +529,12 @@ input[type="checkbox"]:disabled + .form__label::before {
     padding-left: 175px;
   }
 
-  .form__group-wrap--inline .wrap-field {
+  .form__group-wrap--inline .form__wrap-field {
     display: inline-block;
     width: 260px;
   }
 
-  .form__group-wrap--inline .wrap-field:nth-child(2n) {
+  .form__group-wrap--inline .form__wrap-field:nth-child(2n) {
     margin-left: 0;
   }
 
@@ -541,7 +542,7 @@ input[type="checkbox"]:disabled + .form__label::before {
     width: 1050px;
   }
 
-  .form__group-wrap--fio .wrap-field,
+  .form__group-wrap--fio .form__wrap-field,
   .form__input--tel,
   .form__input--email {
     width: 700px;
